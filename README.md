@@ -28,4 +28,4 @@ CREATE EXTENSION pg_trgm;
 
 ```
 
-Site available at **127.0.0.1:8000/blog/**
+Site available at **127.0.0.1:8000/**
