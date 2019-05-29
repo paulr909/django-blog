@@ -3,6 +3,7 @@ from . import views
 from .feeds import LatestPostsFeed
 
 app_name = 'blog'
+
 urlpatterns = [
     # post views
     path('', views.post_list, name='post_list'),

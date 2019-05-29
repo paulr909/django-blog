@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
     'django.contrib.postgres',
     'blog.apps.BlogConfig',
+    'landing',
     'taggit',
     'crispy_forms',
 ]
@@ -82,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'blog',
         'USER': 'postgres',
-        'PASSWORD': 'your-password',
+        'PASSWORD': 'easy-password',
         'HOST': 'localhost',
         'PORT': '5432'
     }

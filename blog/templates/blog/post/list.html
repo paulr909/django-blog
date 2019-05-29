@@ -1,7 +1,7 @@
-{% extends "blog/base.html" %}
+{% extends "base.html" %}
 {% load blog_tags %}
 
-{% block title %}Django Blog{% endblock %}
+{% block title %}Blog{% endblock %}
 
 {% block content %}
     {% if tag %}
@@ -28,5 +28,5 @@
         {{ post.body|markdown|truncatewords_html:30 }}
     {% endfor %}
 
-    {% include "blog/includes/pagination.html" with page=posts %}
+    {% include "includes/pagination.html" with page=posts %}
 {% endblock %}
