@@ -115,8 +115,4 @@ def post_search(request):
             results = Post.objects.annotate(
                 similarity=TrigramSimilarity('title', query),
             ).filter(similarity__gt=0.3).order_by('-similarity')
-    return render(request,
-                  'blog/post/search.html',
-                  {'form': form,
-                   'query': query,
-                   'results': results})
+    return render(request, 'blog/post/search.html', {'form': form, 'query': query, 'results': results})
