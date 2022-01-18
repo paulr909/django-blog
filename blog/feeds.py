@@ -1,12 +1,13 @@
 from django.contrib.syndication.views import Feed
 from django.template.defaultfilters import truncatewords
+
 from .models import Post
 
 
 class LatestPostsFeed(Feed):
-    title = 'Django Blog'
-    link = '/blog/'
-    description = 'New posts from Django Blog.'
+    title = "Django Blog"
+    link = "/blog/"
+    description = "New posts from Django Blog."
 
     def items(self):
         return Post.published.all()[:5]
